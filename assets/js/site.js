@@ -16,8 +16,13 @@ async function injectPartial(id, path) {
 
 // Convert markdown to HTML
 function renderHtmlFromMarkdown(md) {
+  if (typeof marked === "undefined") {
+    console.error("marked.js not loaded");
+    return md; // fail safe: return raw text
+  }
   return marked.parse(md);
 }
+
 
 
 // Load markdown file and display it
