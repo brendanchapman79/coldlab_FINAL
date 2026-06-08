@@ -1,24 +1,40 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="/assets/css/style.css">
-<title>Publications</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>publications · Cold Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js"></script>
 </head>
 <body>
-<div class="container">
-<h1>Publications</h1>
-<div id="pubs"></div>
-</div>
+<div id="nav-placeholder"></div>
+<main class="container">
+  <div class="page-header">
+    <h1>publications</h1>
+  </div>
+  <div id="pubs"></div>
+</main>
+<div id="footer-placeholder"></div>
 <script>
-fetch('/content/publications.json')
-.then(res => res.json())
-.then(data => {
- const el = document.querySelector('#pubs');
- data.forEach(p => {
-   el.innerHTML += `<div class="card"><strong>${p.title}</strong><div>${p.year}</div></div>`;
- });
-});
+  injectPartial('nav-placeholder', 'partials/nav.html');
+  injectPartial('footer-placeholder', 'partials/footer.html');
+
+  fetch('content/publications.json')
+    .then(res => res.json())
+    .then(data => {
+      const el = document.getElementById('pubs');
+      data.forEach(p => {
+        el.innerHTML += `<div class="card" style="margin-bottom:16px">
+          <strong>${p.title}</strong>
+          <div style="color:#aaa;font-size:0.85rem;margin-top:4px">${p.year}</div>
+        </div>`;
+      });
+    })
+    .catch(e => console.error('Could not load publications:', e));
 </script>
 </body>
 </html>
