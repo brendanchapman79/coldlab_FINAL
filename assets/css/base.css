@@ -1,1 +1,9 @@
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
 
+  color: var(--text);
+  background: var(--bg);
+}
