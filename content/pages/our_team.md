@@ -1,10 +1,16 @@
 ## chief investigator
 ### Dr Brendan Chapman
-I am a forensic scientist with expertise in the fields of forensic genetics and DNA, homicide and sex crime investigation, clandestine grave site recovery and cold case review. i am director of the cold case review @ murdoch initiative.
+I am a forensic scientist with expertise in:
+- forensic genetics and dna
+- homicide and sex crime investigation
+- clandestine grave site recovery
+- cold case review
 
-Having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
+i am director of the cold case review @ murdoch initiative.
 
-My research is focussed on the enhancement of molecular capabilities for national security and unsolved cases using cutting-edge DNA sequencing techniques and high sensitivity analysis. I am currently chief investigator on research grants to the value of approx. $1.2million.
+having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
+
+my research is focussed on the enhancement of molecular capabilities for national security and unsolved cases using cutting-edge DNA sequencing techniques and high sensitivity analysis. I am currently chief investigator on research grants to the value of approx. $1.2million.
 
 <br>
 
