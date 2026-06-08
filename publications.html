@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Publications</title>
+</head>
+<body>
+<div class="container">
+<h1>Publications</h1>
+<div id="pubs"></div>
+</div>
+<script>
+fetch('/content/publications.json')
+.then(res => res.json())
+.then(data => {
+ const el = document.querySelector('#pubs');
+ data.forEach(p => {
+   el.innerHTML += `<div class="card"><strong>${p.title}</strong><div>${p.year}</div></div>`;
+ });
+});
+</script>
+</body>
+</html>

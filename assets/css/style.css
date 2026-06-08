@@ -1,0 +1,87 @@
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #111;
+  background: #fafafa;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* NAV */
+nav {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+nav a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #666;
+  max-width: 600px;
+}
+
+/* SECTIONS */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #666;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+}

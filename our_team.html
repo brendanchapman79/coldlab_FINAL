@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- ✅ Load Playfair -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Markdown renderer -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="assets/js/site.js"></script>
+
+<title>our team</title>
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main class="container">
+  <div class="page-header">
+    <h1>our team</h1>
+  </div>
+
+  <article id="content" class="rich"></article>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  injectPartial('nav-placeholder', 'partials/nav.html');
+  injectPartial('footer-placeholder', 'partials/footer.html');
+
+  renderMarkdownFile('content', 'content/pages/our_team.md');
+</script>
+
+</body>
+</html>
