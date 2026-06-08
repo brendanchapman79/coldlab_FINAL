@@ -8,7 +8,7 @@ I am a forensic scientist with expertise in:
 
 i am director of the cold case review @ murdoch initiative.
 
-having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
+>having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
 
 my research is focussed on the enhancement of molecular capabilities for national security and unsolved cases using cutting-edge DNA sequencing techniques and high sensitivity analysis. I am currently chief investigator on research grants to the value of approx. $1.2million.
 
