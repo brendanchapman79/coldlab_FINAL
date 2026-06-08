@@ -35,7 +35,7 @@ async function renderMarkdownFile(targetId, path) {
     if (!r.ok) throw new Error(`Failed to load ${path}`);
 
     const text = await r.text();
-    el.innerHTML = marked.parse(text);
+    el.innerHTML = renderHtmlFromMarkdown(text);
   } catch (e) {
     console.error(e);
   }
