@@ -23,18 +23,107 @@
   injectPartial('nav-placeholder', 'partials/nav.html');
   injectPartial('footer-placeholder', 'partials/footer.html');
 
-  fetch('content/publications.json')
-    .then(res => res.json())
-    .then(data => {
-      const el = document.getElementById('pubs');
-      data.forEach(p => {
-        el.innerHTML += `<div class="card" style="margin-bottom:16px">
+  const ORCID_ID = '0000-0001-7518-6645';
+
+  async function loadORCIDPublications() {
+    const pubsEl = document.getElementById('pubs');
+
+    try {
+      // Get works summary
+      const worksRes = await fetch(
+        `https://pub.orcid.org/v3.0/${ORCID_ID}/works`,
+        {
+          headers: {
+            Accept: 'application/json'
+          }
+        }
+      );
+
+      const worksData = await worksRes.json();
+
+      const groups = worksData.group || [];
+
+      if (groups.length === 0) {
+        pubsEl.innerHTML = '<p>No publications found.</p>';
+        return;
+      }
+
+      // Build publication list
+      const publications = await Promise.all(
+        groups.map(async group => {
+          const summary = group['work-summary'][0];
+
+          const putCode = summary['put-code'];
+
+          // Fetch full record for richer metadata
+          const detailRes = await fetch(
+            `https://pub.orcid.org/v3.0/${ORCID_ID}/work/${putCode}`,
+            {
+              headers: {
+                Accept: 'application/json'
+              }
+            }
+          );
+
+          const detail = await detailRes.json();
+
+          return {
+            title:
+              detail.title?.title?.value ||
+              'Untitled',
+
+            year:
+              detail['publication-date']?.year?.value ||
+              '—',
+
+            journal:
+              detail['journal-title']?.value ||
+              '',
+
+            doi:
+              detail['external-ids']?.['external-id']
+                ?.find(id => id['external-id-type'] === 'doi')
+                ?.['external-id-value'] || null
+          };
+        })
+      );
+
+      // Sort newest first
+      publications.sort((a, b) => b.year - a.year);
+
+      // Render
+      pubsEl.innerHTML = publications.map(p => `
+        <div class="card" style="margin-bottom:16px">
           <strong>${p.title}</strong>
-          <div style="color:#aaa;font-size:0.85rem;margin-top:4px">${p.year}</div>
-        </div>`;
-      });
-    })
-    .catch(e => console.error('Could not load publications:', e));
+
+          <div style="color:#aaa;font-size:0.85rem;margin-top:4px">
+            ${p.year}${p.journal ? ' · ' + p.journal : ''}
+          </div>
+
+          ${
+            p.doi
+              ? `<div style="margin-top:8px">
+                  <a href="https://doi.org/${p.doi}" target="_blank">
+                    https://doi.org/${p.doi}
+                  </a>
+                </div>`
+              : ''
+          }
+        </div>
+      `).join('');
+
+    } catch (err) {
+      console.error('Failed to load ORCID publications:', err);
+
+      pubsEl.innerHTML = `
+        <div class="card">
+          Could not load publications.
+        </div>
+      `;
+    }
+  }
+
+  loadORCIDPublications();
 </script>
 </body>
 </html>
