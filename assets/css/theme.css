@@ -18,3 +18,11 @@
   --space-m: 20px;
   --space-l: 40px;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0A2533;
+    --text: #e0e0e0;
+    --card-bg: #102e3b;
+    --border: #1c4454;
+  }
+}
