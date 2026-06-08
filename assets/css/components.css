@@ -22,3 +22,19 @@
   margin: 20px 0;
   color: var(--muted);
 }
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.brand img {
+  width: 22px;
+}
