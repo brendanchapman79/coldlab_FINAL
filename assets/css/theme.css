@@ -1,1 +1,20 @@
+:root {
+  /* core */
+  --bg: #fafafa;
+  --text: #111111;
+  --muted: #666666;
 
+  /* brand */
+  --brand-primary: #0B3D4F;
+  --brand-accent: #26B8FB;
+  --brand-dark: #0A2533;
+
+  /* surfaces */
+  --card-bg: white;
+  --border: #eaeaea;
+
+  /* spacing */
+  --space-s: 10px;
+  --space-m: 20px;
+  --space-l: 40px;
+}
