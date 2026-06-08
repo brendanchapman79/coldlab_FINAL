@@ -1,10 +1,16 @@
 // Load nav/footer
 async function injectPartial(id, path) {
-  const el = document.getElementById(id);
-  if (!el) return;
+  try {
+    const el = document.getElementById(id);
+    if (!el) return;
 
-  const html = await fetch(path).then(r => r.text());
-  el.innerHTML = html;
+    const r = await fetch(path);
+    if (!r.ok) throw new Error(`Failed to load ${path}`);
+
+    el.innerHTML = await r.text();
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 
@@ -19,7 +25,13 @@ async function renderMarkdownFile(targetId, path) {
   const el = document.getElementById(targetId);
   if (!el) return;
 
-  const text = await fetch(path).then(r => r.text());
+  try {
+    const r = await fetch(path);
+    if (!r.ok) throw new Error(`Failed to load ${path}`);
 
-  el.innerHTML = renderHtmlFromMarkdown(text);
+    const text = await r.text();
+    el.innerHTML = marked.parse(text);
+  } catch (e) {
+    console.error(e);
+  }
 }
