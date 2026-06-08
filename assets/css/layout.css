@@ -1,1 +1,9 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
 
+section {
+  margin-bottom: var(--space-l);
+}
