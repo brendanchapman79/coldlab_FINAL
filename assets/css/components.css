@@ -1,1 +1,18 @@
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: var(--space-m);
+  border-radius: 6px;
+  transition: 0.2s;
+}
 
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  border-color: var(--brand-accent);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
