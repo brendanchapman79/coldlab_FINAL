@@ -41,6 +41,39 @@ nav { background: var(--surface); border-bottom: 1px solid var(--border); positi
 .theme-btn { background: none; border: 1px solid var(--border); border-radius: var(--radius); padding: 4px 9px; cursor: pointer; font-size: 0.8rem; color: var(--muted); font-family: inherit; transition: border-color .15s, color .15s; }
 .theme-btn:hover { border-color: var(--blue); color: var(--blue); }
 
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}
 /* PAGE HEADER */
 .page-header { padding: 48px 0 28px; border-bottom: 1px solid var(--border); margin-bottom: 44px; }
 .page-eyebrow { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: lowercase; color: var(--blue); margin-bottom: 8px; display: block; }
