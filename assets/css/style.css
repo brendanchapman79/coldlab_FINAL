@@ -65,7 +65,7 @@ nav { background: var(--surface); border-bottom: 1px solid var(--border); positi
 .card p  { color: var(--muted); font-size: 0.88rem; margin: 0; line-height: 1.65; }
 
 /* SECTION LABEL */
-.section-label { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 22px; }
+.section-label { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: lowercase; color: var(--blue); padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 22px; }
 
 /* CTA BAR */
 .cta-bar { background: var(--darker); border: 1px solid var(--dark); padding: 36px 40px; border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin: 48px 0; }
