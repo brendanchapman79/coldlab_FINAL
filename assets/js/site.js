@@ -114,6 +114,7 @@ async function renderMarkdownFile(targetId, path) {
     const text = await r.text();
     el.innerHTML = (typeof marked !== 'undefined') ? marked.parse(text) : text;
   } catch(e) { console.error(e); }
+  // return resolves after innerHTML is set — allows .then() chaining
 }
 
 // ── ORCID PUBLICATIONS ───────────────────────────────────────────────────────
