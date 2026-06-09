@@ -25,6 +25,10 @@
   injectPartial('nav-placeholder', 'partials/nav.html');
   injectPartial('footer-placeholder', 'partials/footer.html');
   renderMarkdownFile('content', 'content/pages/our_team.md');
+  injectPartial('nav-placeholder', 'partials/nav.html');
+injectPartial('footer-placeholder', 'partials/footer.html');
+renderMarkdownFile('content', 'content/pages/our_team.md')
+  .then(() => injectTeamPhotos('content'));
 </script>
 </body>
 </html>
