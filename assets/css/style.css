@@ -125,6 +125,37 @@ nav { background: var(--surface); border-bottom: 1px solid var(--border); positi
 .pub-spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .8s linear infinite; display: inline-block; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* ── TEAM MEMBERS ────────────────────────────────────────────────────────── */
+.team-member {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 28px 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.team-member:last-of-type { border-bottom: none; }
+
+.team-photo-wrap {
+  flex-shrink: 0;
+  width: 90px;
+}
+.team-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: block;
+}
+.team-text { flex: 1; min-width: 0; }
+.team-text h3 { margin-top: 4px; }
+
+@media (max-width: 480px) {
+  .team-member { flex-direction: column; }
+  .team-photo-wrap { width: 70px; }
+  .team-photo { width: 70px; height: 70px; }
+}
 /* FOOTER */
 footer { border-top: 1px solid var(--border); padding: 28px 0 40px; margin-top: 80px; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
