@@ -3,103 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cold Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js"></script>
+  <title>Cold Lab</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { background: #fafafa; color: #111; }
-    body { font-family: 'Playfair Display', serif; font-size: 1.05rem; line-height: 1.8; }
-    a { color: #111; text-decoration: none; }
-
-    .container { max-width: 900px; margin: auto; padding: 0 24px; }
-
-    /* NAV */
-    nav { background: white; border-bottom: 1px solid #eee; padding: 16px 0; }
-    .nav-inner { max-width: 900px; margin: auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { font-weight: 700; font-size: 1rem; }
-    .nav-links a { margin-left: 18px; font-size: 0.88rem; color: #333; font-weight: 500; transition: color 0.15s; }
-    .nav-links a:hover { color: #000; }
-
-    /* HERO */
-    .hero { padding: 72px 0 52px; border-bottom: 1px solid #eee; margin-bottom: 56px; }
-    .hero-eyebrow { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: #aaa; margin-bottom: 20px; }
-    .hero h1 { font-size: 3rem; line-height: 1.2; font-weight: 700; margin-bottom: 24px; max-width: 620px; }
-    .hero h1 em { font-style: italic; font-weight: 400; color: #555; }
-    .hero-rule { width: 44px; height: 2px; background: #111; margin-bottom: 28px; }
-    .lead { max-width: 560px; font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 28px; }
-    .text-link { color: #111; text-decoration: underline; text-underline-offset: 3px; font-size: 0.9rem; }
-    .text-link:hover { color: #555; }
-
-    /* STAT STRIP */
-    .stat-strip { display: flex; gap: 48px; padding: 32px 0; border-bottom: 1px solid #eee; margin-bottom: 56px; flex-wrap: wrap; }
-    .stat-num { font-size: 1.4rem; font-weight: 700; display: block; line-height: 1.2; }
-    .stat-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; display: block; margin-top: 3px; }
-
-    /* SECTION LABEL */
-    .section-label { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: #bbb; padding-bottom: 12px; border-bottom: 1px solid #eee; margin-bottom: 24px; }
-
-    /* CARD GRID */
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 60px; }
-    .card { background: white; border: 1px solid #eee; padding: 28px 24px; border-radius: 4px; transition: transform 0.2s, box-shadow 0.2s; }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
-    .card-num { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #ccc; margin-bottom: 14px; }
-    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; line-height: 1.4; }
-    .card p { font-size: 0.88rem; color: #777; line-height: 1.7; margin: 0; }
-    .card-arrow { display: inline-block; margin-top: 16px; font-size: 0.8rem; color: #ccc; transition: color 0.2s; }
-    .card:hover .card-arrow { color: #333; }
-
-    /* ABOUT SPLIT */
-    .about-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 48px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-bottom: 56px; align-items: start; }
+    /* index-only */
+    .hero { padding: 72px 0 52px; border-bottom: 1px solid var(--border); margin-bottom: 56px; }
+    .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; display: block; }
+    .hero h1 { font-size: 3rem; line-height: 1.2; font-weight: 700; margin-bottom: 22px; max-width: 620px; }
+    .hero h1 em { font-style: italic; font-weight: 400; color: var(--muted); }
+    .hero-rule { width: 40px; height: 3px; background: var(--blue); border-radius: 2px; margin-bottom: 24px; }
+    .lead { max-width: 560px; font-size: 1.08rem; color: var(--muted); line-height: 1.8; margin-bottom: 28px; }
+    .stat-strip { display: flex; gap: 48px; padding: 32px 0; border-bottom: 1px solid var(--border); margin-bottom: 56px; flex-wrap: wrap; }
+    .stat-num { font-size: 1.4rem; font-weight: 700; display: block; line-height: 1.2; color: var(--text); }
+    .stat-label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); display: block; margin-top: 3px; }
+    .about-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 48px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 0; align-items: start; }
     .about-strip h2 { font-size: 1.5rem; line-height: 1.35; font-weight: 600; }
-    .about-strip h2 em { font-style: italic; font-weight: 400; color: #555; }
-    .about-strip p { color: #666; font-size: 0.92rem; line-height: 1.8; margin-bottom: 14px; }
-
-    /* CTA */
-    .cta-bar { background: #111; padding: 44px 40px; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 60px; }
-    .cta-bar h3 { font-size: 1.2rem; font-weight: 600; color: #fafafa; margin-bottom: 4px; }
-    .cta-bar p { color: #888; font-size: 0.88rem; margin: 0; }
-    .cta-btn { display: inline-block; padding: 12px 28px; background: #fafafa; color: #111; font-family: 'Playfair Display', serif; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; transition: background 0.2s; }
-    .cta-btn:hover { background: #e0e0e0; }
-
-    /* FOOTER */
-    footer { border-top: 1px solid #eee; padding: 28px 0 40px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-    .footer-copy { font-size: 0.75rem; color: #bbb; line-height: 1.6; }
-    .footer-links { display: flex; gap: 20px; }
-    .footer-links a { font-size: 0.75rem; color: #bbb; transition: color 0.15s; }
-    .footer-links a:hover { color: #333; }
-
+    .about-strip h2 em { font-style: italic; font-weight: 400; color: var(--muted); }
+    .about-strip p { color: var(--muted); font-size: 0.92rem; line-height: 1.8; margin-bottom: 14px; }
     @media (max-width: 640px) {
       .hero h1 { font-size: 2rem; }
       .about-strip { grid-template-columns: 1fr; gap: 24px; }
       .stat-strip { gap: 28px; }
-      .cta-bar { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
-      .nav-links a { margin-left: 10px; font-size: 0.78rem; }
     }
   </style>
 </head>
 <body>
-
-<nav>
-  <div class="nav-inner">
-    <span class="nav-logo">cold lab</span>
-    <div class="nav-links">
-      <a href="about.html">About</a>
-      <a href="our_team.html">Team</a>
-      <a href="research.html">Research</a>
-      <a href="ccr.html">Cold Cases</a>
-      <a href="community.html">Community</a>
-      <a href="education.html">Education</a>
-    </div>
-  </div>
-</nav>
+<div id="nav-placeholder"></div>
 
 <div class="container">
 
   <section class="hero">
-    <p class="hero-eyebrow">Murdoch University · Perth, Western Australia</p>
+    <span class="hero-eyebrow">Murdoch University · Perth, Western Australia</span>
     <h1>Forensic science for the past, <em>looking to the future.</em></h1>
     <div class="hero-rule"></div>
     <p class="lead">Cold Lab integrates academic research with operational forensic practice — specialising in DNA analysis, decomposition science, and the structured review of unsolved homicide and sexual offence cases.</p>
@@ -117,28 +55,24 @@
     <p class="section-label">research areas</p>
     <div class="card-grid">
       <div class="card">
-        <div class="card-num">01</div>
         <h3>Forensic DNA</h3>
         <p>Trace analysis, transfer, persistence, and recovery of forensic biological evidence in complex case contexts.</p>
-        <a href="research.html" class="card-arrow">Read more →</a>
+        <a href="research.html" class="text-link" style="margin-top:14px;display:inline-block">Read more →</a>
       </div>
       <div class="card">
-        <div class="card-num">02</div>
         <h3>Cold Case Review</h3>
         <p>Structured interdisciplinary review of unsolved cases — applying contemporary science to historical evidence.</p>
-        <a href="ccr.html" class="card-arrow">Read more →</a>
+        <a href="ccr.html" class="text-link" style="margin-top:14px;display:inline-block">Read more →</a>
       </div>
       <div class="card">
-        <div class="card-num">03</div>
         <h3>Decomposition &amp; Environment</h3>
         <p>Applied research into decomposition processes, taphonomy, and environmental forensic signals.</p>
-        <a href="research.html" class="card-arrow">Read more →</a>
+        <a href="research.html" class="text-link" style="margin-top:14px;display:inline-block">Read more →</a>
       </div>
       <div class="card">
-        <div class="card-num">04</div>
         <h3>Education</h3>
         <p>Research-led teaching in forensic science — training the next generation of practitioners and investigators.</p>
-        <a href="education.html" class="card-arrow">Read more →</a>
+        <a href="education.html" class="text-link" style="margin-top:14px;display:inline-block">Read more →</a>
       </div>
     </div>
   </section>
@@ -164,18 +98,10 @@
 
 </div>
 
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <span class="footer-copy">© Brendan Chapman · Murdoch University · School of Medical, Molecular &amp; Forensic Sciences</span>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="our_team.html">Team</a>
-        <a href="https://www.coldlab.org">coldlab.org</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+<div id="footer-placeholder"></div>
+<script>
+  injectPartial('nav-placeholder', 'partials/nav.html');
+  injectPartial('footer-placeholder', 'partials/footer.html');
+</script>
 </body>
 </html>
