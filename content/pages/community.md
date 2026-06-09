@@ -4,6 +4,12 @@ we participate in multiple industry expert working groups and collaborate with g
 
 <br> 
 
+## in the news/media
+Article
+Article
+
+<br>
+
 ## our collaborators
 - sam houston state university (US)
 
