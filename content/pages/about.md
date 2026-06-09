@@ -1,4 +1,4 @@
-## about [cold_lab]
+## about us
 
 forensic science takes the core sciences - biology, chemistry, physics, math, and applies them to a legal framework in order to help identify clues and use them to solve complex criminal justice questions.
 
