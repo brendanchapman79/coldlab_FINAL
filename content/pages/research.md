@@ -3,12 +3,13 @@ our research targets some of the biggest issues facing modern society, using for
 
 ## research areas
 - forensic intelligence
-- national security
-- dna recovery
-- trace dna
-- sexual assault
-- microbiome
+- detection and enhancment of national security capabilities
+- dna recovery from challenging materials
+- "touch" dna identification and isolation
+- detection of trace biologics
+- approaches to improving sexual assault outcomes
+- microbial forensics 
 - clandestine grave detection and recovery
-- spermatozoa isolation
+- single cell and spermatozoa isolation
 - crime scene investigation
-- homicide 
+- homicide investigation and review
