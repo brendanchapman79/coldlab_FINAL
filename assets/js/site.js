@@ -18,7 +18,74 @@ function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme') || 'light';
   applyTheme(current === 'dark' ? 'light' : 'dark');
 }
+// ── TEAM PHOTO INJECTION ─────────────────────────────────────────────────────
+// After markdown renders, finds h3 tags and injects headshots where images exist.
+// Image files must be named: assets/img/{firstname-lastname}.jpg
+// Only injects for people in the PHOTO_MEMBERS list.
 
+const PHOTO_MEMBERS = [
+  'Dr Brendan Chapman',
+  'Sara Natale',
+  'Ruby Dixon',
+  'Aaron Hamilton',
+  'Heather McKenna',
+];
+
+function injectTeamPhotos(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.querySelectorAll('h3').forEach(h3 => {
+    const nameRaw = h3.textContent.trim();
+    // Match against photo list (partial match handles ", PhD Candidate" suffix)
+    const match = PHOTO_MEMBERS.find(m => nameRaw.includes(m) || m.includes(nameRaw.split(',')[0].trim()));
+    if (!match) return;
+
+    // Build slug: "Dr Brendan Chapman" → "brendan-chapman"
+    const slug = match
+      .replace(/^Dr\s+/i, '')
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '');
+
+    const imgSrc = `assets/img/${slug}.jpg`;
+
+    // Wrap h3 + following paragraph(s) in a flex container with photo
+    const wrapper = document.createElement('div');
+    wrapper.className = 'team-member';
+
+    const photo = document.createElement('img');
+    photo.src = imgSrc;
+    photo.alt = match;
+    photo.className = 'team-photo';
+    // Hide broken images gracefully
+    photo.onerror = function() { this.closest('.team-photo-wrap').style.display = 'none'; };
+
+    const photoWrap = document.createElement('div');
+    photoWrap.className = 'team-photo-wrap';
+    photoWrap.appendChild(photo);
+
+    const textWrap = document.createElement('div');
+    textWrap.className = 'team-text';
+
+    // Move h3 and all following siblings until next h3/h2 into textWrap
+    textWrap.appendChild(h3.cloneNode(true));
+    let next = h3.nextElementSibling;
+    const toMove = [];
+    while (next && !['H2','H3','H4'].includes(next.tagName)) {
+      toMove.push(next);
+      next = next.nextElementSibling;
+    }
+    toMove.forEach(el => textWrap.appendChild(el.cloneNode(true)));
+
+    wrapper.appendChild(photoWrap);
+    wrapper.appendChild(textWrap);
+
+    // Replace original h3 and its siblings with wrapper
+    h3.replaceWith(wrapper);
+    toMove.forEach(el => el.remove());
+  });
+}
 // ── PARTIALS ─────────────────────────────────────────────────────────────────
 async function injectPartial(id, path) {
   try {
