@@ -7,11 +7,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/site.js"></script>
   <title>publications · Cold Lab</title>
 </head>
 <body>
+
 <div id="nav-placeholder"></div>
+
 <main class="container">
   <div class="page-header">
     <span class="page-eyebrow">forensic science research</span>
@@ -19,56 +20,18 @@
   </div>
   <div id="publications"></div>
 </main>
+
 <div id="footer-placeholder"></div>
+
+<script src="assets/js/site.js"></script>
 <script>
   injectPartial('nav-placeholder', 'partials/nav.html');
   injectPartial('footer-placeholder', 'partials/footer.html');
   loadPublications('publications');
 </script>
+
 </body>
 </html>
-            Accept: 'application/json'
-          }
-        }
-      );
-
-      const worksData = await worksRes.json();
-
-      const groups = worksData.group || [];
-
-      if (groups.length === 0) {
-        pubsEl.innerHTML = '<p>No publications found.</p>';
-        return;
-      }
-
-      // Build publication list
-      const publications = await Promise.all(
-        groups.map(async group => {
-          const summary = group['work-summary'][0];
-
-          const putCode = summary['put-code'];
-
-          // Fetch full record for richer metadata
-          const detailRes = await fetch(
-            `https://pub.orcid.org/v3.0/${ORCID_ID}/work/${putCode}`,
-            {
-              headers: {
-                Accept: 'application/json'
-              }
-            }
-          );
-
-          const detail = await detailRes.json();
-
-          return {
-            title:
-              detail.title?.title?.value ||
-              'Untitled',
-
-            year:
-              detail['publication-date']?.year?.value ||
-              '—',
-
             journal:
               detail['journal-title']?.value ||
               '',
