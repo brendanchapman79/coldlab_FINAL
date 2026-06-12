@@ -8,9 +8,11 @@ I am a forensic scientist with expertise in:
 
 i am director of the cold case review @ murdoch initiative.
 
->having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
+having worked for over 10 years in western australian state government departments in both the forensic DNA laboratory and with law enforcement at crime scenes, I have attended thousands of major crime scenes, been involved in countless investigations, and performed numerous body recovery activities associated with high profile homicides an wa.
 
-my research is focussed on the enhancement of molecular capabilities for national security and unsolved cases using cutting-edge DNA sequencing techniques and high sensitivity analysis. I am currently chief investigator on research grants to the value of approx. $1.2million.
+my research is focussed on the enhancement of molecular capabilities for national security and unsolved cases using cutting-edge DNA sequencing techniques and high sensitivity analysis. 
+
+i am currently chief investigator on research grants to the value of approx. $1.2million.
 
 <br>
 
@@ -33,34 +35,34 @@ Lorem ipsum dolor sit amet. Et galisum accusantium a error culpa vel provident Q
 
 ## current researchers
 #### Dhanashri Dhotre
-project xxxx
+dna recovery from gravesite ligatures
 
 #### Daisy Bond
-project
+dissolution of swabbing media
 
 #### Rose Rose
-project
+lipid mediated cellular recovery
 
 ### Tarryn Isard
-project
+recovery of fingerprints from textured surfaces
 
 <br>
 
 ## past researchers
 #### sexual assault projects
-name, name
+Kimberley Carrillo, Celeste Chinnery, Lilly Ryan, Neil Galgey, Luise Sust, Grace Mulder
 
 #### trace DNA projects
-name name name
+Kaveesh Munasinghe, Alana Marr, Jacinta Aung, Emma Haddleton, Jamie Webb
 
 #### clandestine gravesite projects
-project
+Heidi Austic, Alice Whittingham, Georgia Budge, Nikita Price, Tara Regan, Tracie Narayan, Bradlee Stevens, Danielle Colledge
 
 ### crime scene investigation projects
-name name
+Matthew DeCinque, Evan Eakin
 
 ### forensic intelligence projects
-name name
+Tess Meyer, Megan Davies, Morgan Randall, James Maybir, Chris Nguyen, Ben Thompson
 
 ### other projects
-name name
+Grace Jeong, Megan Taylor, Jesse Vandervaart, Rebecca Curulli, Aleena Sunil, Em Fletcher, Rachel Harding, Stella Mecham, Chelsea Charles, Maria Kadyrov, Ahn Tran

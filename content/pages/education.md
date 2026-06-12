@@ -17,6 +17,11 @@ with Murdoch University’s school of medical, molecular and forensic sciences, 
 
 ### undergraduate
 
-**UPDATE** B1380 Bachelor of Science (Forensic Biology and Toxicology) [link to Murdoch University page]
+[B1418 Bachelor of Forensic Science](https://www.murdoch.edu.au/course/undergraduate/b1418)
 
-B1380 Bachelor of Science (Forensic Chemistry) [link to Murdoch University page]
+[B1425 Bachelor of Forensic Science / Master of Forensic Science](https://www.murdoch.edu.au/course/undergraduate/b1425)
+
+### research
+honours
+research masters
+PhD

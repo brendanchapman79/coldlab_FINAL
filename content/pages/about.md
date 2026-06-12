@@ -10,15 +10,20 @@ we are a forensic research team, educators, collaborators and crime fighters
 
 ## approach
 
-our work integrates academic research with operational practice, supporting law enforcement, industry, and training environments.
+our work integrates academic research with operational practice, supporting law enforcement, industry, and training environments. 
+
+we undertake research that aims to influence the most significant crimes that affect our way of life - homicide, sexual assault, and national security threats.
 
 ## collaboration
 
 we collaborate with:
-- Law enforcement agencies  
-- Academic partners  
-- Industry stakeholders  
+- law enforcement agencies  
+- academic partners  
+- industry stakeholders  
+- intelligence and security agencies
+- bright minds
 
 ## contact
 
-for enquiries, please get in touch via the contact page or email Dr Brendan Chapman
+new partnerships, prospective research students, and those seeking advice are welcome. 
+for enquiries, please get in touch via the contact page or email Dr Brendan Chapman. 
