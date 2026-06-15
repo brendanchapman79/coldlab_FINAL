@@ -32,10 +32,8 @@ a { color: var(--text); text-decoration: none; }
   position: fixed; inset: 0; background: rgba(0,0,0,0.5);
   display: flex; align-items: center; justify-content: center; z-index: 1000;
 }
-.modal-box {
-  background: var(--bg); color: var(--text); padding: 32px;
-  border-radius: 8px; max-width: 480px; width: 90%; position: relative;
-}
+.modal-overlay[hidden] { display: none; }
+
 .modal-box {
   background: var(--surface); color: var(--text); padding: 32px;
   border-radius: 8px; max-width: 480px; width: 90%; position: relative;
