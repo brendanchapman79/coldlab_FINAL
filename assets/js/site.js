@@ -23,6 +23,8 @@ async function injectPartial(id, path) {
           hamburger.setAttribute('aria-expanded', false);
         });
       });
+    } else if (id === 'nav-placeholder') {
+      console.warn('Hamburger wiring skipped: hamburger or nav-links element not found in', path);
     }
 
     // Highlight active page link
