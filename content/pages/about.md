@@ -26,4 +26,4 @@ we collaborate with:
 ## contact
 
 new partnerships, prospective research students, and those seeking advice are welcome. 
-for enquiries, please get in touch via the contact page or email Dr Brendan Chapman. 
+for enquiries, please get in touch via the <a href="index.html#contact" class="text-link">contact page</a> or email Dr Brendan Chapman. 

@@ -3,6 +3,6 @@ Dr Brendan Chapman is the director of coldcasereview@murdoch, a think tank of th
 
 we work across borders, providing assistance and collaborative networks of expertise in australia, the united states and europe through our inaugural partnership in the international cold case project, run by amber alert EU.
 
-we welcome law enforcement from any jurisdiction to reach out to discuss how our techniques can assist. 
+we welcome law enforcement from any jurisdiction to <a href="index.html#contact" class="text-link">reach out</a> out to discuss how our techniques can assist. 
 
 ## examples

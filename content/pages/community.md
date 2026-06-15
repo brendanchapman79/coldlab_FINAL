@@ -38,7 +38,7 @@ we participate in multiple industry expert working groups and collaborate with g
 - university of staffordshire (UK)
 - staatsanwaltschaft verden (state attorney department verden) (DE)
 
-*for details on police and government agencies that we work with, please contact us
+*for details on police and government agencies that we work with, please <a href="index.html#contact" class="text-link">contact us</a>
 
 <br>
 
