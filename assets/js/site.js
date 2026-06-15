@@ -117,6 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
   closeBtn.addEventListener('click', () => { modal.hidden = true; });
   modal.addEventListener('click', e => { if (e.target === modal) modal.hidden = true; });
 
+  // Auto-open modal if linked via #contact
+  if (window.location.hash === '#contact') {
+    modal.hidden = false;
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(form);
@@ -129,10 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-// Auto-open modal if linked via #contact
-if (window.location.hash === '#contact' && modal) {
-  modal.hidden = false;
-}
 // ── ORCID PUBLICATIONS ────────────────────────────────────────────────────────
 const ORCID_ID = '0000-0001-7518-6645';
 
