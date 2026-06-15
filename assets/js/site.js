@@ -103,7 +103,32 @@ function injectTeamPhotos(containerId) {
     toMove.forEach(el => el.remove());
   });
 }
+// ── CONTACT MODAL ─────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn  = document.getElementById('open-contact-modal');
+  const modal    = document.getElementById('contact-modal');
+  const closeBtn = document.getElementById('modal-close');
+  const form     = document.getElementById('contact-form');
+  const success  = document.getElementById('form-success');
 
+  if (!openBtn || !modal) return;
+
+  openBtn.addEventListener('click', () => { modal.hidden = false; });
+  closeBtn.addEventListener('click', () => { modal.hidden = true; });
+  modal.addEventListener('click', e => { if (e.target === modal) modal.hidden = true; });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      await fetch('/', { method: 'POST', body: data });
+      form.hidden = true;
+      success.hidden = false;
+    } catch (err) {
+      console.error('Form submission error:', err);
+    }
+  });
+});
 
 // ── ORCID PUBLICATIONS ────────────────────────────────────────────────────────
 const ORCID_ID = '0000-0001-7518-6645';
