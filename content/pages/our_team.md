@@ -18,10 +18,10 @@ i am currently chief investigator on research grants to the value of approx. $1.
 
 ## phd researchers
 ### Sara Natale, PhD Candidate
-Lorem ipsum dolor sit amet. Et galisum accusantium a error culpa vel provident Quis! 33 ullam omnis non aliquid quam qui quia distinctio ut aperiam illum aut quia officiis. Est cumque dignissimos ea enim placeat et doloremque doloremque et doloribus iusto. 
+Isolation of sperm cells in intimate samples from sexual assault is a common forensic challenge. I am looking at various methods to optimise the current best-practice differential extraction method, namely through chemical modifications and adjunct strategies that exploit the cellular biology of spermatozoa.
 
 ### Ruby Dixon, PhD Candidate
-Lorem ipsum dolor sit amet. Et galisum accusantium a error culpa vel provident Quis! 33 ullam omnis non aliquid quam qui quia distinctio ut aperiam illum aut quia officiis. Est cumque dignissimos ea enim placeat et doloremque doloremque et doloribus iusto. 
+My research is on the "sexome", the bacterial communities that cohabitate our reproductive organs that are transferred during sexual contact. These transfers contain unique DNA signatures that can be detected and analysed using microbial DNA sequencing to provide evidence of physical interaction associated with sexual assault.
 
 ### Aaron Hamilton, PhD Candidate
 My current research is focused on genetic variants that have the potential to give to rise in changes to the amino acid sequence of peptide chains found in hair strands and their potential for the identification of persons of interest based on recovered hair strands. More broadly my research contains work on genetic sequencing, bioinformatics and population variant mapping. My previous research has been in the area of metabolomics and biomarker discovery, working towards developing a biological test of fatigue that will allow for monitoring of drivers and improved driver safety.
@@ -29,7 +29,7 @@ My current research is focused on genetic variants that have the potential to gi
 ### Heather McKenna, PhD Candidate
 
 Heather McKenna, PhD Candidate
-Lorem ipsum dolor sit amet. Et galisum accusantium a error culpa vel provident Quis! 33 ullam omnis non aliquid quam qui quia distinctio ut aperiam illum aut quia officiis. Est cumque dignissimos ea enim placeat et doloremque doloremque et doloribus iusto. 
+My research is investigating an in-field solution for the collection of DNA samples that is resistant to environmental effects and maintains high purity and yield nucleic acids for rapid "robot-ready" testing once at the laboratory.
 
 <br>
 
@@ -50,19 +50,19 @@ recovery of fingerprints from textured surfaces
 
 ## past researchers
 #### sexual assault projects
-Kimberley Carrillo, Celeste Chinnery, Lilly Ryan, Neil Galgey, Luise Sust, Grace Mulder
+Kimberley Carrillo, Celeste Chinnery, Lilly Ryan, Neil Galgey, Luise Sust, Grace Mulder, Natasha Nye, Tiana Harris, Shannen Blackwell, Sean Hutchinson, Laura Nutton, Scott Beckwith, Ashley Nolan
 
 #### trace DNA projects
-Kaveesh Munasinghe, Alana Marr, Jacinta Aung, Emma Haddleton, Jamie Webb
+Kaveesh Munasinghe, Alana Marr, Jacinta Aung, Emma Haddleton, Jamie Webb, Michael Cahill, Katherine Dilley, Kirsten Lewis, Paige Luckhurst, Annabelle Rylands, Kathleen Nguyen, Nick Booth, Tara Dunhill, Nicole Lim, Colby Hymus, Nikki Kolanski
 
 #### clandestine gravesite projects
-Heidi Austic, Alice Whittingham, Georgia Budge, Nikita Price, Tara Regan, Tracie Narayan, Bradlee Stevens, Danielle Colledge
+Heidi Austic, Alice Whittingham, Georgia Budge, Nikita Price, Tara Regan, Tracie Narayan, Bradlee Stevens, Danielle Colledge, Cody Raymer, Jack Dowell-Curby, Courtney Cameron
 
 ### crime scene investigation projects
-Matthew DeCinque, Evan Eakin
+Matthew DeCinque, Evan Eakin, Rita Omari, Elizabeth Cain, Lillian Hennessy-Ellis, Ashleigh Tod, Tiana De Almeida, Emma Howard, Travis Battista, Elizabeth Morahan, Veronica D'Souza, Cahill Hunt, Simon Colwill
 
 ### forensic intelligence projects
-Tess Meyer, Megan Davies, Morgan Randall, James Maybir, Chris Nguyen, Ben Thompson
+Tess Meyer, Megan Davies, Morgan Randall, James Maybir, Chris Nguyen, Ben Thompson, Sarah Hackett, Harry Keefe, Justin Sim
 
 ### other projects
-Grace Jeong, Megan Taylor, Jesse Vandervaart, Rebecca Curulli, Aleena Sunil, Em Fletcher, Rachel Harding, Stella Mecham, Chelsea Charles, Maria Kadyrov, Ahn Tran
+Grace Jeong, Megan Taylor, Jesse Vandervaart, Rebecca Curulli, Aleena Sunil, Em Fletcher, Rachel Harding, Stella Mecham, Chelsea Charles, Maria Kadyrov, Ahn Tran, Jonti Eyles, Ryan Longridge, Rebecca Parrick, Gregory Daniel, Kayla Bandy, Lisa Zitzmann
